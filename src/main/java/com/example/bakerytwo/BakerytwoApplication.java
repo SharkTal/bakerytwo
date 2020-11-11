@@ -44,6 +44,7 @@ public class BakerytwoApplication {
 
 
 			//username: user password: user
+			userRepository.deleteAll();
 			userRepository.save(new User("user", "$2a$04$1.YhMIgNX/8TkCKGFUONWO1waedKhQ5KrnB30fl0Q01QKqmzLf.Zi", "USER"));
 			//username:adimin, password:admin
 			userRepository.save(new User("admin", "$2a$04$KNLUwOWHVQZVpXyMBNc7JOzbLiBjb9Tk9bP7KNcPI12ICuvzXQQKG","ADMIN"));
