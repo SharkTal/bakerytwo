@@ -72,6 +72,6 @@ public class BakeryController {
     //home page
     @GetMapping("/")
     public String home(){
-        return "breadlist";
+        return "login";
     }
 }
