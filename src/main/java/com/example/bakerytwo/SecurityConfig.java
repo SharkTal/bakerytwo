@@ -31,7 +31,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
-                // .loginPage("/login") No need this step, it messed up me
+                .loginPage("/login")// No need this step, it messed up me
                 .defaultSuccessUrl("/breadlist")
                 .permitAll()
                 .and()

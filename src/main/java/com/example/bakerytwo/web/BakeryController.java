@@ -69,4 +69,9 @@ public class BakeryController {
         return "login";
     }
 
+    //home page
+    @GetMapping("/")
+    public String home(){
+        return "breadlist";
+    }
 }
